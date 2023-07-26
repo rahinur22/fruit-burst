@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Fruit Burst </title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
 
     <!-- Daisy UI link -->
 
@@ -38,17 +39,53 @@
     <!-- Vanilla CSS -->
 
     <style>
-
-        .font-lato{
+        .font-lato {
             font-family: 'Lato', sans-serif;
         }
-
     </style>
 
 </head>
 
 <body>
-    <h1 class="text-4xl"> Assignment 3 </h1>
+
+    <header class="container mx-auto">
+
+        <!-- Nav Bar -->
+
+        <nav class="ml-10 mr-10 font-lato">
+
+            <div class="navbar bg-white lg:bg-[#F85559] rounded-full pt-4 pb-4 pl-6 pr-6 justify-between items-center">
+
+                <div class="">
+                    <ul tabindex="0" class="flex gap-7 text-black lg:text-white text-xl">
+                        <li><a href="#"> Homepage </a></li>
+                        <li><a href="#"> About US </a></li>
+                        <li><a href="#"> Shop </a></li>
+                        <li><a href="#"> All Fruits </a></li>
+                    </ul>
+                </div>
+
+
+                <div class="navbar-center">
+                    <img src="images/logo.png" alt="fruit-burst-logo">
+                    <a class="normal-case text-4xl text-white justify-center ml-4">Fruit Burst</a>
+                </div>
+
+                <div class="form-control">
+
+                    <div class="relative">
+                        <input type="text" placeholder="Search here" class="w-80 rounded-3xl p-2.5 outline-none"/>
+                        <a href="#"> <i class="fa-solid fa-magnifying-glass absolute top-3.5 right-6"></i> </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
 </body>
 
 </html>
