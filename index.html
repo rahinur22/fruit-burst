@@ -686,20 +686,23 @@
 
         <section>
 
-            <div class="bg-cover bg-center lg:h-screen rounded-md" 
-            style="background-image: url(images/banner1.png)">
+            <div class="bg-cover bg-center lg:h-auto rounded-md mb-16"
+                style="background-image: url(images/banner1.png)">
 
                 <div
-                    class="w-full h-full bg-[#00000099] flex flex-col gap-10 lg:gap-0 items-center justify-center rounded-md pt-6 pb-6 lg:space-y-5 lg:pt-0 lg:pb-0">
+                    class="w-full h-full bg-[#00000099] flex flex-col gap-10 lg:gap-0 items-center justify-center rounded-md pt-6 pb-6 md:pt-10 md:pb-10 lg:space-y-6 lg:pt-20 lg:pb-20">
 
                     <div class="space-y-3 flex flex-col items-center justify-center">
+
                         <h1 class="text-white text-2xl md:text-4xl lg:text-5xl font-bold text-center">
                             Meet The Team Members
                         </h1>
-    
-                        <p class="text-xs w-40 md:text-sm md:w-80 lg:text-base lg:w-auto text-white font-medium text-center">
+
+                        <p
+                            class="text-xs w-40 md:text-sm md:w-80 lg:text-base lg:w-auto text-white font-medium text-center">
                             Professional employees are there for you to pick the most amazing and fresh fruits.
                         </p>
+
                     </div>
 
                     <!-- Members -->
@@ -803,14 +806,14 @@
 
         <!-- Why Choose Us  Part -->
 
-        <section class="hidden">
+        <section class="">
 
             <div class="mb-24">
 
                 <div class="space-y-3 flex flex-col justify-center items-center mb-10">
 
-                    <h1 class="text-5xl font-extrabold">Why Choose Us?</h1>
-                    <p class="text-base text-[#12121299] font-medium w-2/3 text-center">
+                    <h1 class="text-2xl md:text-4xl lg:text-5xl font-extrabold">Why Choose Us?</h1>
+                    <p class="text-xs md:text-sm lg:text-base text-[#12121299] font-medium w-2/3 text-center">
                         Our country has plenty of fruits, which are available in all shapes, sizes and colours. Summers
                         or winters, there is always a wide variety of fruits to choose from. There is also a great
                         variety in their colours and in the way they smell and taste. Mangoes, peaches, papayas, plums,
@@ -819,53 +822,66 @@
 
                 </div>
 
-                <div class="grid grid-cols-3 gap-6 justify-center items-center">
+                <div class="grid lg:grid-cols-3 gap-6 justify-center items-center">
 
-                    <div class="space-y-6">
+                    <div class="space-y-6 order-2 lg:order-1">
 
                         <!-- Point 1 -->
-                        <div class="flex gap-5 justify-center items-center">
 
-                            <div class="bg-slate-300 h-10 w-16 rounded-full flex justify-center items-center">
+                        <div class="flex flex-col lg:flex-row gap-5 justify-center items-center">
+
+                            <div class="bg-slate-300 h-10 w-10 lg:w-16 rounded-full flex justify-center items-center">
                                 <i class="fa-solid fa-user-group"></i>
                             </div>
 
-                            <div class="space-y-3">
+                            <div class="space-y-3 text-center lg:text-start">
                                 <h1 class="text-2xl font-extrabold">Dedicated Team</h1>
-                                <hr class="w-28 border border-black">
-                                <p class="text-base text-[#12121299] font-medium">Professional employees are there for
+                                <div class="flex justify-center lg:justify-start">
+                                    <hr class="w-28 border border-black">
+                                </div>
+                                <p class="text-base text-[#12121299] font-medium pl-10 pr-10  lg:w-auto lg:pl-0 lg:pr-0">Professional employees
+                                    are there for
                                     you to pick the most amazing and fresh fruits.</p>
                             </div>
 
                         </div>
 
                         <!-- Point 2 -->
-                        <div class="flex gap-5 justify-center items-center">
 
-                            <div class="bg-slate-300 h-10 w-16 rounded-full flex justify-center items-center">
+                        <div class="flex flex-col lg:flex-row gap-5 justify-center items-center">
+
+                            <div class="bg-slate-300 h-10 w-10 lg:w-16 rounded-full flex justify-center items-center">
                                 <i class="fa-solid fa-heart-circle-check"></i>
                             </div>
 
-                            <div class="space-y-3">
+                            <div class="space-y-3 text-center lg:text-start">
                                 <h1 class="text-2xl font-extrabold">Fresh is Best</h1>
-                                <hr class="w-28 border border-black">
-                                <p class="text-base text-[#12121299] font-medium">Professional employees are there for
+                                <div class="flex justify-center lg:justify-start">
+                                    <hr class="w-28 border border-black">
+                                </div>
+                                <p class="text-base text-[#12121299] font-medium pl-10 pr-10  lg:w-auto lg:pl-0 lg:pr-0">Professional employees
+                                    are there for
                                     you to pick the most amazing and fresh fruits.</p>
                             </div>
 
                         </div>
 
-                        <!-- Point 3 -->
-                        <div class="flex gap-5 justify-center items-center">
 
-                            <div class="bg-slate-300 h-10 w-16 rounded-full flex justify-center items-center">
+                        <!-- Point 3 -->
+
+                        <div class="flex flex-col lg:flex-row gap-5 justify-center items-center">
+
+                            <div class="bg-slate-300 h-10 w-10 lg:w-16 rounded-full flex justify-center items-center">
                                 <i class="fa-solid fa-gift"></i>
                             </div>
 
-                            <div class="space-y-3">
+                            <div class="space-y-3 text-center lg:text-start">
                                 <h1 class="text-2xl font-extrabold">Gift Certificates</h1>
-                                <hr class="w-28 border border-black">
-                                <p class="text-base text-[#12121299] font-medium">Professional employees are there for
+                                <div class="flex justify-center lg:justify-start">
+                                    <hr class="w-28 border border-black">
+                                </div>
+                                <p class="text-base text-[#12121299] font-medium pl-10 pr-10  lg:w-auto lg:pl-0 lg:pr-0">Professional employees
+                                    are there for
                                     you to pick the most amazing and fresh fruits.</p>
                             </div>
 
@@ -873,61 +889,65 @@
 
                     </div>
 
-                    <div>
+                    <div class="order-1 flex justify-center items-center lg:order-2">
                         <img src="images/whychoose1.png" alt="">
                     </div>
 
-                    <div class="space-y-6">
+                    <div class="space-y-6 order-3">
 
                         <!-- Point 4 -->
-                        <div class="flex gap-5 justify-center items-center text-right">
+                        <div class="flex flex-col-reverse lg:flex-row gap-5 justify-center items-center">
 
-                            <div class="space-y-3">
+                            <div class="space-y-3 text-center lg:text-end">
                                 <h1 class="text-2xl font-extrabold">Integrated Supplier</h1>
-                                <div class="pl-64">
-                                    <hr class="w-28 border border-black ml-3">
+                                <div class="flex justify-center lg:justify-end">
+                                    <hr class="w-28 border border-black">
                                 </div>
-                                <p class="text-base text-[#12121299] font-medium">Professional employees are there for
+                                <p class="text-base text-[#12121299] font-medium pl-10 pr-10  lg:w-auto lg:pl-0 lg:pr-0">Professional employees
+                                    are there for
                                     you to pick the most amazing and fresh fruits.</p>
                             </div>
 
-                            <div class="bg-slate-300 h-10 w-16 rounded-full flex justify-center items-center">
+                            <div class="bg-slate-300 h-10 w-10 lg:w-16 rounded-full flex justify-center items-center">
                                 <i class="fa-solid fa-parachute-box"></i>
                             </div>
 
                         </div>
 
-                        <!-- Point 5 -->
-                        <div class="flex gap-5 justify-center items-center text-right">
 
-                            <div class="space-y-3">
+                        <!-- Point 5 -->
+                        <div class="flex flex-col-reverse lg:flex-row gap-5 justify-center items-center">
+
+                            <div class="space-y-3 text-center lg:text-end">
                                 <h1 class="text-2xl font-extrabold">Sustainable Practice</h1>
-                                <div class="pl-64">
-                                    <hr class="w-28 border border-black ml-3">
+                                <div class="flex justify-center lg:justify-end">
+                                    <hr class="w-28 border border-black">
                                 </div>
-                                <p class="text-base text-[#12121299] font-medium">Professional employees are there for
+                                <p class="text-base text-[#12121299] font-medium pl-10 pr-10  lg:w-auto lg:pl-0 lg:pr-0">Professional employees
+                                    are there for
                                     you to pick the most amazing and fresh fruits.</p>
                             </div>
 
-                            <div class="bg-slate-300 h-10 w-16 rounded-full flex justify-center items-center">
+                            <div class="bg-slate-300 h-10 w-10 lg:w-16 rounded-full flex justify-center items-center">
                                 <i class="fa-solid fa-ice-cream"></i>
                             </div>
 
                         </div>
 
                         <!-- Point 6 -->
-                        <div class="flex gap-5 justify-center items-center text-right">
+                        <div class="flex flex-col-reverse lg:flex-row gap-5 justify-center items-center">
 
-                            <div class="space-y-3">
+                            <div class="space-y-3 text-center lg:text-end">
                                 <h1 class="text-2xl font-extrabold">The Benefits Only</h1>
-                                <div class="pl-64">
-                                    <hr class="w-28 border border-black ml-3">
+                                <div class="flex justify-center lg:justify-end">
+                                    <hr class="w-28 border border-black">
                                 </div>
-                                <p class="text-base text-[#12121299] font-medium">Professional employees are there for
+                                <p class="text-base text-[#12121299] font-medium pl-10 pr-10  lg:w-auto lg:pl-0 lg:pr-0">Professional employees
+                                    are there for
                                     you to pick the most amazing and fresh fruits.</p>
                             </div>
 
-                            <div class="bg-slate-300 h-10 w-16 rounded-full flex justify-center items-center">
+                            <div class="bg-slate-300 h-10 w-10 lg:w-16 rounded-full flex justify-center items-center">
                                 <i class="fa-solid fa-thumbs-up"></i>
                             </div>
 
@@ -938,9 +958,6 @@
                 </div>
             </div>
         </section>
-
-        <!-- test -->
-
 
     </main>
 
