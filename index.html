@@ -54,41 +54,92 @@
 
         <!-- Nav Bar -->
 
-        <nav class="hidden">
+        <nav>
+                <!-- Navbar for Mobile -->
 
-            <div class="navbar bg-white lg:bg-[#F85559] rounded-full pt-4 pb-4 pl-6 pr-6 justify-between items-center">
+            <div class="lg:hidden">
+                <div class="navbar bg-base-100 justify-between">
 
-                <div class="">
-                    <ul tabindex="0" class="flex gap-7 text-black lg:text-white text-xl">
-                        <li><a href="#"> Homepage </a></li>
-                        <li><a href="#"> About US </a></li>
-                        <li><a href="#"> Shop </a></li>
-                        <li><a href="#"> All Fruits </a></li>
-                    </ul>
-                </div>
+                    <div class="flex gap-4">
+                        <img src="images/logo.png" alt="" class="w-7 md:w-10">
+                        <a class="text-xl md:text-2xl font-bold">Fruit Burst</a>
+                    </div>
 
+                    <div>
 
-                <div class="navbar-center">
-                    <img src="images/logo.png" alt="fruit-burst-logo">
-                    <a class="normal-case text-4xl text-white justify-center ml-4">Fruit Burst</a>
-                </div>
+                        <div class="dropdown dropdown-bottom dropdown-end">
 
-                <div class="form-control">
+                            <label tabindex="0" class="btn btn-ghost btn-circle">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h16M4 18h7" />
+                                </svg>
+                            </label>
 
-                    <div class="relative">
-                        <input type="text" placeholder="Search here" class="w-80 rounded-3xl p-2.5 outline-none" />
-                        <a href="#"> <i class="fa-solid fa-magnifying-glass absolute top-3.5 right-6"></i> </a>
+                            <ul tabindex="0"
+                                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                                <li><a>Home</a></li>
+                                <li><a>About Us</a></li>
+                                <li><a>Shop</a></li>
+                                <li><a>All Fruits</a></li>
+                                <li>
+                                    <div class="form-control">
+
+                                        <div class="relative">
+                                            <input type="text" placeholder="Search here" class="w-44 rounded-3xl p-2.5 outline-none" />
+                                            <a href="#"> <i class="fa-solid fa-magnifying-glass absolute top-3.5 right-6"></i> </a>
+                                        </div>
+                
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+
                     </div>
 
                 </div>
 
             </div>
 
+            <!-- Navbar for Large Device -->
+
+            <div class="hidden lg:block">
+                <div class="navbar bg-[#F85559] rounded-full pt-4 pb-4 pl-6 pr-6 justify-between items-center">
+
+                    <div class="">
+                        <ul tabindex="0" class="flex gap-7 text-white text-xl">
+                            <li><a href="#"> Home </a></li>
+                            <li><a href="#"> About US </a></li>
+                            <li><a href="#"> Shop </a></li>
+                            <li><a href="#"> All Fruits </a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="navbar-center">
+                        <img src="images/logo.png" alt="fruit-burst-logo">
+                        <a class="normal-case text-4xl text-white justify-center ml-4">Fruit Burst</a>
+                    </div>
+
+                    <div class="form-control">
+
+                        <div class="relative">
+                            <input type="text" placeholder="Search here" class="w-80 rounded-3xl p-2.5 outline-none" />
+                            <a href="#"> <i class="fa-solid fa-magnifying-glass absolute top-3.5 right-6"></i> </a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
         </nav>
 
         <!-- Banner - Carousel or Slider -->
 
-        <div class="carousel mt-7">
+        <div class="carousel mt-2 lg:mt-7">
 
             <!-- Slide 1 -->
 
@@ -835,13 +886,20 @@
                             </div>
 
                             <div class="space-y-3 text-center lg:text-start">
-                                <h1 class="text-2xl font-extrabold">Dedicated Team</h1>
+
+                                <h1 class="text-2xl md:text-3xl font-extrabold">Dedicated Team</h1>
+
                                 <div class="flex justify-center lg:justify-start">
                                     <hr class="w-28 border border-black">
                                 </div>
-                                <p class="text-base text-[#12121299] font-medium pl-10 pr-10  lg:w-auto lg:pl-0 lg:pr-0">Professional employees
+
+                                <p
+                                    class="text-base md:text-xl text-para-color font-medium pl-10 pr-10 md:w-96 lg:w-auto lg:pl-0 lg:pr-0">
+                                    Professional employees
                                     are there for
-                                    you to pick the most amazing and fresh fruits.</p>
+                                    you to pick the most amazing and fresh fruits.
+                                </p>
+                                
                             </div>
 
                         </div>
@@ -855,13 +913,20 @@
                             </div>
 
                             <div class="space-y-3 text-center lg:text-start">
-                                <h1 class="text-2xl font-extrabold">Fresh is Best</h1>
+
+                                <h1 class="text-2xl md:text-3xl font-extrabold">Fresh is Best</h1>
+
                                 <div class="flex justify-center lg:justify-start">
                                     <hr class="w-28 border border-black">
                                 </div>
-                                <p class="text-base text-[#12121299] font-medium pl-10 pr-10  lg:w-auto lg:pl-0 lg:pr-0">Professional employees
+
+                                <p
+                                    class="text-base md:text-xl text-para-color font-medium pl-10 pr-10 md:w-96 lg:w-auto lg:pl-0 lg:pr-0">
+                                    Professional employees
                                     are there for
-                                    you to pick the most amazing and fresh fruits.</p>
+                                    you to pick the most amazing and fresh fruits.
+                                </p>
+
                             </div>
 
                         </div>
@@ -876,13 +941,20 @@
                             </div>
 
                             <div class="space-y-3 text-center lg:text-start">
-                                <h1 class="text-2xl font-extrabold">Gift Certificates</h1>
+
+                                <h1 class="text-2xl md:text-3xl font-extrabold">Gift Certificates</h1>
+
                                 <div class="flex justify-center lg:justify-start">
                                     <hr class="w-28 border border-black">
                                 </div>
-                                <p class="text-base text-[#12121299] font-medium pl-10 pr-10  lg:w-auto lg:pl-0 lg:pr-0">Professional employees
+
+                                <p
+                                    class="text-base md:text-xl text-para-color font-medium pl-10 pr-10 md:w-96 lg:w-auto lg:pl-0 lg:pr-0">
+                                    Professional employees
                                     are there for
-                                    you to pick the most amazing and fresh fruits.</p>
+                                    you to pick the most amazing and fresh fruits.
+                                </p>
+
                             </div>
 
                         </div>
@@ -899,13 +971,20 @@
                         <div class="flex flex-col-reverse lg:flex-row gap-5 justify-center items-center">
 
                             <div class="space-y-3 text-center lg:text-end">
-                                <h1 class="text-2xl font-extrabold">Integrated Supplier</h1>
+
+                                <h1 class="text-2xl md:text-3xl font-extrabold">Integrated Supplier</h1>
+
                                 <div class="flex justify-center lg:justify-end">
                                     <hr class="w-28 border border-black">
                                 </div>
-                                <p class="text-base text-[#12121299] font-medium pl-10 pr-10  lg:w-auto lg:pl-0 lg:pr-0">Professional employees
+
+                                <p
+                                    class="text-base md:text-xl text-para-color font-medium pl-10 pr-10 md:w-96 lg:w-auto lg:pl-0 lg:pr-0">
+                                    Professional employees
                                     are there for
-                                    you to pick the most amazing and fresh fruits.</p>
+                                    you to pick the most amazing and fresh fruits.
+                                </p>
+
                             </div>
 
                             <div class="bg-slate-300 h-10 w-10 lg:w-16 rounded-full flex justify-center items-center">
@@ -919,13 +998,19 @@
                         <div class="flex flex-col-reverse lg:flex-row gap-5 justify-center items-center">
 
                             <div class="space-y-3 text-center lg:text-end">
-                                <h1 class="text-2xl font-extrabold">Sustainable Practice</h1>
+                                <h1 class="text-2xl md:text-3xl font-extrabold">Sustainable Practice</h1>
+
                                 <div class="flex justify-center lg:justify-end">
                                     <hr class="w-28 border border-black">
                                 </div>
-                                <p class="text-base text-[#12121299] font-medium pl-10 pr-10  lg:w-auto lg:pl-0 lg:pr-0">Professional employees
+
+                                <p
+                                    class="text-base md:text-xl text-para-color font-medium pl-10 pr-10 md:w-96 lg:w-auto lg:pl-0 lg:pr-0">
+                                    Professional employees
                                     are there for
-                                    you to pick the most amazing and fresh fruits.</p>
+                                    you to pick the most amazing and fresh fruits.
+                                </p>
+
                             </div>
 
                             <div class="bg-slate-300 h-10 w-10 lg:w-16 rounded-full flex justify-center items-center">
@@ -938,13 +1023,20 @@
                         <div class="flex flex-col-reverse lg:flex-row gap-5 justify-center items-center">
 
                             <div class="space-y-3 text-center lg:text-end">
-                                <h1 class="text-2xl font-extrabold">The Benefits Only</h1>
+
+                                <h1 class="text-2xl md:text-3xl font-extrabold">The Benefits Only</h1>
+
                                 <div class="flex justify-center lg:justify-end">
                                     <hr class="w-28 border border-black">
                                 </div>
-                                <p class="text-base text-[#12121299] font-medium pl-10 pr-10  lg:w-auto lg:pl-0 lg:pr-0">Professional employees
+
+                                <p
+                                    class="text-base md:text-xl text-para-color font-medium pl-10 pr-10 md:w-96 lg:w-auto lg:pl-0 lg:pr-0">
+                                    Professional employees
                                     are there for
-                                    you to pick the most amazing and fresh fruits.</p>
+                                    you to pick the most amazing and fresh fruits.
+                                </p>
+
                             </div>
 
                             <div class="bg-slate-300 h-10 w-10 lg:w-16 rounded-full flex justify-center items-center">
@@ -968,7 +1060,8 @@
             <h1 class="text-2xl md:text-3xl lg:text-4xl text-white font-bold">Fruit Burst</h1>
         </div>
 
-        <div class="flex flex-wrap gap-8 text-sm md:gap-7 md:text-base lg:gap-10 lg:text-lg justify-center items-center  text-white font-semibold">
+        <div
+            class="flex flex-wrap gap-8 text-sm md:gap-7 md:text-base lg:gap-10 lg:text-lg justify-center items-center  text-white font-semibold">
             <a href="#" class="">Home</a>
             <a href="#" class="">About US</a>
             <a href="#" class="">All Fruits</a>
