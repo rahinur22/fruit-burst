@@ -31,6 +31,7 @@
                     colors: {
                         clifford: '#da373d',
                         'bg-primary': '#F85559',
+                        'para-color': '#12121299',
                     }
                 }
             }
@@ -49,7 +50,7 @@
 
 <body class="flex flex-col justify-center items-center font-lato">
 
-    <header class="w-11/12 mb-52">
+    <header class="w-11/12 mb-10 lg:mb-52">
 
         <!-- Nav Bar -->
 
@@ -263,7 +264,7 @@
 
         <!-- Fruits Overlay Part -->
 
-        <div class="hidden justify-center">
+        <div class="hidden lg:flex lg:justify-center">
 
             <div class="flex justify-evenly bg-white border-2 rounded-lg w-3/4 absolute pt-5 pb-5 -mt-24">
 
@@ -298,19 +299,23 @@
 
     </header>
 
-    <main class="w-11/12 hidden">
+    <main class="w-11/12">
 
         <!-- Deal Of The Day Section -->
 
         <section>
 
-            <div class="flex justify-between mb-10">
+            <div class="flex flex-col items-center lg:flex-row lg:justify-between mb-10">
 
-                <div class="space-y-4">
+                <div class="flex flex-col space-y-2 mb-3 md:space-y-4 md:mb-4 lg:space-y-6 lg:mb-0">
 
-                    <h1 class="text-5xl font-extrabold font-lato">Deal of the Day</h1>
+                    <h1 class="text-xl text-center md:text-3xl lg:text-5xl lg:text-start font-extrabold">Deal of the Day</h1>
 
-                    <p class="text-base text-[#12121299] font-lato w-2/3">Here is a few great deal for our new
+                    <p class=
+                    "text-sm w-72 text-center
+                    md:text-base md:w-96 md:text-center
+                    lg:text-xl lg:w-2/3 lg:text-start 
+                    text-para-color">Here is a few great deal for our new
                         customers.Grab these offer and Enjoy your favorite fruits from Fruit Burst.</p>
 
                 </div>
@@ -320,37 +325,50 @@
                     <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
 
                         <div class="flex flex-col">
-                            <span class="countdown font-mono text-5xl">
+                            <span class="countdown text-2xl md:text-4xl lg:text-5xl font-extrabold">
                                 <span style="--value:29;"></span>
                             </span>
-                            days
+                            <span class="text-xs md:text-sm lg:text-base text-para-color font-medium">
+                            Days</span>
                         </div>
 
-                        <i class="fa-solid fa-ellipsis-vertical mt-4"></i>
+                        <i class="fa-solid fa-ellipsis-vertical 
+                        mt-1 text-xs 
+                        md:mt-2 md:text-sm
+                        lg:mt-3 lg:text-base"></i>
 
                         <div class="flex flex-col">
-                            <span class="countdown font-mono text-5xl">
+                            <span class="countdown text-2xl md:text-4xl lg:text-5xl font-extrabold">
                                 <span style="--value:15;"></span>
                             </span>
-                            hours
+                            <span class="text-xs md:text-sm lg:text-base text-para-color font-medium">
+                            Hours</span>
                         </div>
 
-                        <i class="fa-solid fa-ellipsis-vertical mt-4"></i>
+                        <i class="fa-solid fa-ellipsis-vertical 
+                        mt-1 text-xs 
+                        md:mt-2 md:text-sm
+                        lg:mt-3 lg:text-base"></i>
 
                         <div class="flex flex-col">
-                            <span class="countdown font-mono text-5xl">
+                            <span class="countdown text-2xl md:text-4xl lg:text-5xl font-extrabold">
                                 <span style="--value:25;"></span>
                             </span>
-                            min
+                            <span class="text-xs md:text-sm lg:text-base text-para-color font-medium">
+                            Minutes</span>
                         </div>
 
-                        <i class="fa-solid fa-ellipsis-vertical mt-4"></i>
+                        <i class="fa-solid fa-ellipsis-vertical 
+                        mt-1 text-xs 
+                        md:mt-2 md:text-sm
+                        lg:mt-3 lg:text-base"></i>
 
                         <div class="flex flex-col">
-                            <span class="countdown font-mono text-5xl">
+                            <span class="countdown text-2xl md:text-4xl lg:text-5xl font-extrabold">
                                 <span style="--value:08;"></span>
                             </span>
-                            sec
+                            <span class="text-xs md:text-sm lg:text-base text-para-color font-medium">
+                            Seconds</span>
                         </div>
 
                     </div>
@@ -363,7 +381,7 @@
 
         <!-- Fruit Details With Modal Section -->
 
-        <section>
+        <section class="hidden">
 
             <div class="mb-14">
 
@@ -669,7 +687,7 @@
 
         <!-- Meet Our team members part -->
 
-        <section>
+        <section class="hidden">
 
             <div class="relative w-full mb-16">
 
@@ -792,7 +810,7 @@
 
         <!-- Why Choose Us  Part -->
 
-        <section>
+        <section class="hidden">
 
             <div class="mb-24">
 
